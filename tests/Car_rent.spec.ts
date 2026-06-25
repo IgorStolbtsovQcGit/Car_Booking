@@ -31,9 +31,10 @@ test('cars pickup', async ({ page }) => {
     await page.waitForTimeout(2000);
 
     await page.getByRole('button', { name: 'Choose Pick-up Date' }).click();
-    await page.getByRole('checkbox', { name: 'Sat 20 June' }).click();
+    await page.getByRole('button', { name: 'Following months' }).click();
+    await page.getByRole('checkbox', { name: 'Sat 15 August' }).click();
     await page.waitForTimeout(2000);
-    await page.getByRole('checkbox', { name: 'Tue 23 June' }).click();
+    await page.getByRole('checkbox', { name: 'Tue 18 August' }).click();
     await page.waitForTimeout(2000);
     await page.getByLabel('Pick up time').getByLabel('Time10:00 AM12:00 AM12:30').selectOption('12:00');
     await page.waitForTimeout(2000);
