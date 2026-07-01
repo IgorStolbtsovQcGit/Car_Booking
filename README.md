@@ -8,7 +8,7 @@ End-to-end test for the car rental flow on [booking.com/cars](https://www.bookin
 
 1. Opens the car rental page and accepts cookies
 2. Searches for a car pickup in **New York**
-3. Selects pickup date: 2026 August 15 and return date: 2026 August 18
+3. Selects dynamic pickup date (today + 30 days) and return date (today + 33 days)
 4. Sets pickup time 12:00 PM and drop-off time 09:00 AM
 5. Filters results by supplier **Budget**
 6. Opens the first available deal
@@ -20,11 +20,11 @@ End-to-end test for the car rental flow on [booking.com/cars](https://www.bookin
 ## Prerequisites
 
 - Node.js - 24.13.1
-- npm - 11.8.0
+- npm - 11.18.0
 
 ## Installation
 
-git clone https://github.com/YOUR_USERNAME/booking-cars-playwright.git
+git clone https://github.com/IgorStolbtsovQcGit/booking-cars-playwright.git
 cd booking-cars-playwright
 npm install
 npx playwright install chromium
